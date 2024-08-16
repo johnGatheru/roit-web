@@ -4,9 +4,9 @@ import CustomCarousel from "@/components/CustomCarosel";
 
 export default function Home() {
   return (
-    <main className="">
+    <div className="">
       <Testing />
       <CustomCarousel />
-    </main>
+    </div>
   );
 }
