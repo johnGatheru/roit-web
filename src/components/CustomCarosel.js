@@ -8,6 +8,8 @@ import image2 from "@/app/assets/carouselItems/consultation4.jpeg";
 import image3 from "@/app/assets/carouselItems/consultation3.jpeg";
 import image4 from "@/app/assets/carouselItems/consultation2.jpg";
 import image5 from "@/app/assets/carouselItems/consultation.jpeg";
+import next from "@/app/assets/images/next_fz6vybyzqai5_64.png"
+import prev from "@/app/assets/images/previous_d9ibfsfrf9nw_64.png"
 import image6 from "@/app/assets/carouselItems/finance2.jpeg";
 
 // Sample images for the carousel
@@ -118,7 +120,7 @@ const CarouselContainer = styled.div`
     width: 100%;
     height: 100%;
     color: #ffffff;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.4);
     padding: 2em 3em;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     display: flex;
@@ -138,7 +140,8 @@ const CarouselContainer = styled.div`
   }
 
   .embla__slide.is-selected .heading1 {
-    font-size: 48px;
+    font-size: 4.2em;
+    font-weight:bold;
     opacity: 0.7;
     color: yellow;
     animation: ${slideInFromTopZoom} 3s ease forwards;
@@ -147,6 +150,7 @@ const CarouselContainer = styled.div`
   .embla__slide.is-selected .heading2 {
     color: white;
     font-weight: bold;
+    font-size:24px;
     animation: ${slideInFromTopZoom} 3s ease forwards;
   }
 
@@ -157,10 +161,10 @@ const CarouselContainer = styled.div`
   }
 
   .shop {
-    color: #fff;
-    border-radius: 20px;
+    color: #000000;
+    border-radius: 15px;
     background-color: gold;
-    padding: 4px 12px;
+    padding: .8em 2em;
     font-weight: bold;
     border: none;
   }
@@ -171,7 +175,7 @@ const Button = styled.button`
   z-index: 1;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.2);
   color: white;
   border: none;
   padding: 1rem;
@@ -256,7 +260,7 @@ const CustomCarousel = () => {
                   <h2 className="heading2">{image.main}</h2>
                   <div className="shop-container gap-4 flex">
                     <button className="shop">{image.shop}</button>
-                    <button className="shop ml-5">Explore</button>
+                    <button className="shop ">Explore</button>
                   </div>
                 </div>
               </div>
@@ -264,11 +268,11 @@ const CustomCarousel = () => {
           ))}
         </div>
       </div>
-      <Button onClick={scrollPrev} style={{ left: "20px" }}>
-        Prev
+      <Button onClick={scrollPrev} style={{ left: "20px", borderRadius:"50px"}}>
+        <Image src={prev} width={20}/>
       </Button>
-      <Button onClick={scrollNext} style={{ right: "20px" }}>
-        Next
+      <Button onClick={scrollNext} style={{ right: "20px", borderRadius:"50px", backgroundColor:"none"  }}>
+        <Image src={next} width={20}/>
       </Button>
       <IndicatorContainer>
         {images.map((_, index) => (

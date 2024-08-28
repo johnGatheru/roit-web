@@ -1,8 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import "~slick-carousel/slick/slick.css";
-@import "~slick-carousel/slick/slick-theme.css";
+/* @import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css"; */
 /* @import "bootstrap/dist/css/bootstrap.min.css"; */
 
 :root {
@@ -29,6 +29,27 @@
   padding: 0;
   margin: 0;
 }
+.underline-title {
+  font-size: 24px; /* Adjust as needed */
+  font-weight: bold;
+}
+
+.underline-name {
+  position: relative;
+  display: inline-block;
+}
+
+.underline-name::after {
+  content: '';
+  position: absolute;
+  bottom: -3px; /* Adjust to create the gap between text and underline */
+  left: 0;
+  width: 75%; /* This sets the underline to cover 3/4 of the word */
+  height: 2px; /* Thickness of the underline */
+  background-color: yellow; /* Color of the underline */
+}
+
+
 /* html{
   background: #ffffff;
 } */
@@ -72,3 +93,52 @@
   left: 0;
   top: 0;
 } */
+
+@keyframes bounceZoom {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  40% {
+    transform: translateY(-30px) scale(1.1);
+  }
+  60% {
+    transform: translateY(-15px) scale(0.9);
+  }
+}
+
+.bounce-zoom {
+  animation: bounceZoom 2s infinite;
+}
+.navbar {
+  position: fixed;
+  top: 10px; /* Small margin at the top */
+  right: 0;
+  width: 100%; /* 3/4 of the screen width */
+  background-color: transparent; /* Adjust based on your design */
+ /* Add border radius */
+   /* Optional shadow */
+  z-index: 1000; /* Ensure it floats above other content */
+}
+.small-navbar{
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+  background-color: rgb(238, 237, 237,0.5);
+  
+  width: 70%;
+}
+.small-navbar .btn{
+  border-radius: 50px;
+}
+
+.image-container {
+  position: relative;
+  width: 100%; /* or specific width */
+  height: 400px; /* or specific height */
+  overflow: hidden; /* Ensure image doesn't overflow container */
+}
+
+.image-container img {
+  width: 100%; /* Make sure image fits the width of the container */
+  height: 100%; /* Make sure image fits the height of the container */
+  object-fit: cover; /* Cover the container without stretching, might crop */
+}
