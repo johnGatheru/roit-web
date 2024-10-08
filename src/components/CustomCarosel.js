@@ -116,45 +116,39 @@ const CarouselContainer = styled.div`
   .carousel-statement {
     position: absolute;
     top: 0;
-
     width: 100%;
     height: 100%;
     color: #ffffff;
     background: rgba(0, 0, 0, 0.4);
     padding: 2em 3em;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
   }
 
-  @media screen and (max-width: 678px) {
-    .carousel-statement {
-      font-size: 12px;
-    }
-  }
-  .embla__slide .main-content {
+  .main-content {
     width: 60%;
     margin-left: 5%;
   }
 
-  .embla__slide.is-selected .heading1 {
+  .heading1 {
     font-size: 4.2em;
-    font-weight:bold;
+    font-weight: bold;
     opacity: 0.7;
     color: yellow;
     animation: ${slideInFromTopZoom} 3s ease forwards;
   }
 
-  .embla__slide.is-selected .heading2 {
+  .heading2 {
     color: white;
     font-weight: bold;
-    font-size:24px;
+    margin-top: 2em;
+    font-size: 24px;
     animation: ${slideInFromTopZoom} 3s ease forwards;
   }
 
-  .embla__slide.is-selected .shop-container {
+  .shop-container {
     gap: 2em;
     margin-top: 1em;
     animation: ${slideInFromBottomZoom} 3s ease forwards;
@@ -164,9 +158,63 @@ const CarouselContainer = styled.div`
     color: #000000;
     border-radius: 15px;
     background-color: gold;
-    padding: .8em 2em;
+    padding: 0.8em 2em;
     font-weight: bold;
     border: none;
+  }
+
+  @media (max-width: 1024px) {
+    .heading1 {
+      font-size: 3em;
+    }
+
+    .heading2 {
+      font-size: 20px;
+    }
+
+    .main-content {
+      width: 70%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .heading1 {
+      font-size: 2em;
+    }
+
+    .heading2 {
+      font-size: 18px;
+    }
+
+    .carousel-statement {
+      padding: 1.5em;
+    }
+
+    .main-content {
+      width: 80%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .heading1 {
+      font-size: 1.5em;
+    }
+
+    .heading2 {
+      font-size: 16px;
+    }
+
+    .shop-container {
+      gap: 1em;
+    }
+
+    .shop {
+      padding: 0.5em 1.5em;
+    }
+
+    .main-content {
+      width: 90%;
+    }
   }
 `;
 
@@ -259,8 +307,8 @@ const CustomCarousel = () => {
                   <h3 className="heading1">{image.highlight}</h3>
                   <h2 className="heading2">{image.main}</h2>
                   <div className="shop-container gap-4 flex">
-                    <button className="shop">{image.shop}</button>
-                    <button className="shop ">Explore</button>
+                    {/* <button className="shop">{image.shop}</button> */}
+                    <button className="shop ">Explore Now</button>
                   </div>
                 </div>
               </div>

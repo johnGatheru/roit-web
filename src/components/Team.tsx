@@ -8,7 +8,6 @@ import {
 } from "react-icons/fa";
 import profile1 from "@/app/assets/images/profile1.jpeg";
 import profile2 from "@/app/assets/images/profile2.jpeg";
-
 import profile3 from "@/app/assets/images/profile3.jpeg";
 import profile4 from "@/app/assets/images/profile4.jpeg";
 
@@ -18,7 +17,6 @@ const Cards = () => {
       id: 1,
       imageSrc: profile1,
       name: "Peris Chris",
-
       title: "CEO",
       description:
         "This is a brief description for card 1. It provides insight into the card’s content.",
@@ -35,15 +33,14 @@ const Cards = () => {
       id: 3,
       imageSrc: profile3,
       name: "John Walker",
-
       title: "Finance Advisor",
       description:
         "This is a brief description for card 3. It provides insight into the card’s content.",
     },
     {
       id: 4,
-      name: "Elijah Smith",
       imageSrc: profile4,
+      name: "Elijah Smith",
       title: "Lawyer",
       description:
         "This is a brief description for card 4. It provides insight into the card’s content.",
@@ -52,14 +49,21 @@ const Cards = () => {
 
   return (
     <div className="">
-      <div className="container mx-auto p-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-24 gap-x-8">
+      <div className="flex w-full items-center justify-center bg-green-600">
+        <h2 className="text-3xl font-bold py-8 text-yellow-500">The Team</h2>
+      </div>
+      <div className="flex w-full items-center justify-center font-bold">
+        <p>The team behind the success of riot company</p>
+      </div>
+
+      <div className="container mx-auto p-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-12 gap-x-8 bg-red-500">
         {cards.map((card) => (
           <div
             key={card.id}
-            className="relative bg-white rounded-lg shadow-lg overflow-visible group"
+            className="relative bg-white rounded-lg shadow-lg overflow-visible group mb-32 lg:mb-0 sm:mb-32"
           >
             {/* Image */}
-            <div className="flex justify-center ">
+            <div className="flex justify-center">
               <Image
                 src={card.imageSrc}
                 alt={card.title}
