@@ -75,5 +75,5 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ testimonial }) => {
     </div>
   );
 };
-
+// addded eslint command
 export default TestimonialCard;
