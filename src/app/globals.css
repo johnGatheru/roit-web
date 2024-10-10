@@ -45,8 +45,8 @@
   bottom: -3px; /* Adjust to create the gap between text and underline */
   left: 0;
   width: 75%; /* This sets the underline to cover 3/4 of the word */
-  height: 2px; /* Thickness of the underline */
-  background-color: yellow; /* Color of the underline */
+  height: 3px; /* Thickness of the underline */
+  background-color: #facc15; /* Color of the underline */
 }
 
 

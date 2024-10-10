@@ -10,9 +10,8 @@ import TestimonialCarousel from "@/components/AllTestimonials";
 export default function Home() {
   return (
     <div className="">
-      {/* <Testing /> */}
       <CustomCarousel />
-      {/* <AboutUs /> */}
+      <AboutUs />
 
       <Achievements />
       <Cards />

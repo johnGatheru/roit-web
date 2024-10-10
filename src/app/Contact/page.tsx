@@ -15,9 +15,9 @@ import {
 import { Slide } from "react-awesome-reveal";
 import Image from "next/image";
 import contactUsImage from "@/app/assets/images/contact_0dy6odr8qeyz_64.png"; // Replace with your image path
-import locationIcon from "@/app/assets/images/contact_0dy6odr8qeyz_64.png"; // Replace with your icon path
-import emailIcon from "@/app/assets/images/contact_0dy6odr8qeyz_64.png"; // Replace with your icon path
-import phoneIcon from "@/app/assets/images/contact_0dy6odr8qeyz_64.png"; // Replace with your icon path
+import locationIcon from "@/app/assets/images/location-pin.gif"; // Replace with your icon path
+import emailIcon from "@/app/assets/images/mail-delivery.gif"; // Replace with your icon path
+import phoneIcon from "@/app/assets/images/incoming-call.gif"; // Replace with your icon path
 
 const { Title, Text } = Typography;
 
@@ -61,23 +61,30 @@ const ContactUsPage = () => {
         <Row gutter={16}>
           <Col xs={24} md={8}>
             <Card className="text-center shadow-lg" bordered={false}>
-              <Image src={locationIcon} alt="Location" width={50} height={50} />
-              <Title level={4}>Our Location</Title>
-              <Text>1234 Main Street, Anytown, kenya</Text>
+              <Image
+                src={locationIcon}
+                alt="Location"
+                width={100}
+                height={100}
+              />
+              <Title level={3}>Our Location</Title>
+              <Text className="font-bold">
+                1234 Main Street, Anytown, kenya
+              </Text>
             </Card>
           </Col>
           <Col xs={24} md={8}>
             <Card className="text-center shadow-lg" bordered={false}>
-              <Image src={emailIcon} alt="Email" width={50} height={50} />
-              <Title level={4}>Email Us</Title>
-              <Text>support@example.com</Text>
+              <Image src={emailIcon} alt="Email" width={100} height={100} />
+              <Title level={3}>Email Us</Title>
+              <Text className="font-bold">support@example.com</Text>
             </Card>
           </Col>
           <Col xs={24} md={8}>
             <Card className="text-center shadow-lg" bordered={false}>
-              <Image src={phoneIcon} alt="Phone" width={50} height={50} />
-              <Title level={4}>Call Us</Title>
-              <Text>07484-7890</Text>
+              <Image src={phoneIcon} alt="Phone" width={100} height={100} />
+              <Title level={3}>Call Us</Title>
+              <Text className="font-bold">07484-7890</Text>
             </Card>
           </Col>
         </Row>
@@ -86,9 +93,11 @@ const ContactUsPage = () => {
       {/* Contact Form */}
       <div className="container mx-auto my-12 px-4">
         <Slide direction="up" triggerOnce>
-          <Title className="text-3xl font-bold mb-6 text-center">
-            Get in Touch
-          </Title>
+          <div className="flex w-full items-center justify-center">
+            <h3 className="text-3xl font-bold mb-6 text-center underline-name text-yellow-400">
+              Get in Touch
+            </h3>
+          </div>
           <Form
             layout="vertical"
             onFinish={handleFormSubmit}
@@ -131,7 +140,6 @@ const ContactUsPage = () => {
             </Form.Item>
             <Form.Item>
               <Button
-                type="primary"
                 htmlType="submit"
                 className="bg-amber-400 hover:bg-amber-500 rounded-xl px-16 py-6 text-black font-bold"
               >
@@ -145,9 +153,11 @@ const ContactUsPage = () => {
       {/* Location Map */}
       <div className="container mx-auto my-12 px-4">
         <Slide direction="up" triggerOnce>
-          <Title className="text-3xl font-bold mb-6 text-center">
-            Find Us on the Map
-          </Title>
+          <div className="flex justify-center w-full">
+            <h3 className="text-3xl font-bold mb-6 text-center underline-name text-yellow-400">
+              Find Us on the Map
+            </h3>
+          </div>
           <div className="map-container">
             <MapContainer
               center={[37.7749, -122.4194]} // Latitude and Longitude

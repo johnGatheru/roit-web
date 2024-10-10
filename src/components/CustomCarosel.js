@@ -80,7 +80,7 @@ const slideInFromBottomZoom = keyframes`
 `;
 
 const CarouselContainer = styled.div`
-  width: 98vw;
+  width: 100vw;
   height: 90vh;
   margin: 0 auto;
   position: relative;
