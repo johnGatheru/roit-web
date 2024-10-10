@@ -60,12 +60,12 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ testimonial }) => {
       {/* Author Information */}
       <div className="flex items-center mt-12 space-x-4">
         <div className="rounded-full bg-gray-300 w-12 h-12 overflow-hidden justify-center items-center">
-          <Image
+          {/* <Image
             src={profile4}
             alt={testimonial.author}
             height={80}
             width={100}
-          />
+          /> */}
         </div>
         <div>
           <h4 className="text-lg font-semibold">{testimonial.author}</h4>
@@ -75,5 +75,5 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ testimonial }) => {
     </div>
   );
 };
-
+// addded eslint command
 export default TestimonialCard;
