@@ -10,12 +10,29 @@ const StyledTabs = styled(Tabs)`
     display: flex;
     justify-content: center;
   }
+
   .ant-tabs-tab {
     padding: 12px 24px;
+    font-size: 16px;
   }
+
   .ant-tabs-tab-active .ant-tabs-tab-btn {
     font-weight: bold;
     border-bottom: 2px solid orange;
+  }
+
+  @media (max-width: 768px) {
+    .ant-tabs-tab {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .ant-tabs-tab {
+      padding: 6px 12px;
+      font-size: 12px;
+    }
   }
 `;
 
@@ -24,6 +41,17 @@ const ContentWrapper = styled.div`
   background-color: #f5f5f5;
   border-radius: 8px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+
+  @media (max-width: 768px) {
+    padding: 16px;
+    font-size: 14px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 12px;
+    font-size: 12px;
+  }
 `;
 
 const VisionGoalMission = () => {
@@ -35,7 +63,7 @@ const VisionGoalMission = () => {
       label: "Vision",
       children: (
         <ContentWrapper>
-          <Slide direction="right" triggerOnce>
+          <Slide direction="right" triggerOnce duration={1000}>
             Our vision is to be the leading provider of innovative solutions in
             our industry, driving positive change and progress.
           </Slide>
@@ -47,7 +75,7 @@ const VisionGoalMission = () => {
       label: "Goal",
       children: (
         <ContentWrapper>
-          <Slide direction="right" triggerOnce>
+          <Slide direction="right" triggerOnce duration={1000}>
             Our goal is to achieve sustainable growth by consistently delivering
             high-quality products and services that exceed our customers'
             expectations.
@@ -60,7 +88,7 @@ const VisionGoalMission = () => {
       label: "Objectives",
       children: (
         <ContentWrapper>
-          <Slide direction="right" triggerOnce>
+          <Slide direction="right" triggerOnce duration={1000}>
             Our objectives are to expand our market presence, enhance customer
             satisfaction, and continuously innovate our offerings.
           </Slide>
@@ -72,7 +100,7 @@ const VisionGoalMission = () => {
       label: "Mission",
       children: (
         <ContentWrapper>
-          <Slide direction="right" triggerOnce>
+          <Slide direction="right" triggerOnce duration={1000}>
             Our mission is to deliver value to our stakeholders by operating
             with integrity, efficiency, and a commitment to excellence.
           </Slide>

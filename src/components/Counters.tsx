@@ -4,7 +4,10 @@ import CountUp from "react-countup";
 import Image from "next/image";
 import { useInView } from "react-intersection-observer";
 import { Fade } from "react-awesome-reveal";
-import image2 from "@/app/assets/images/customer_rv6lw3vuvkaw_64.png";
+import image2 from "@/app/assets/images/task_complete_nqs46kf00n70_256.png";
+import image3 from "@/app/assets/images/client_tju2x3v0pu5i_256.png";
+import image4 from "@/app/assets/images/training_70c6mouat5tq_256.png";
+import image5 from "@/app/assets/images/experience_z21dlvtu2b3e_256.png";
 
 const SatisfiedCustomers = () => {
   const { ref: countUpRef1, inView: inView1 } = useInView({
@@ -21,12 +24,12 @@ const SatisfiedCustomers = () => {
   });
 
   return (
-    <div className="bg-black bg-opacity-65 py-16 flex flex-col md:flex-row justify-center items-center gap-10 md:gap-14">
+    <div className="bg-black bg-opacity-65 py-16 flex flex-col md:flex-row justify-center items-center gap-10 md:gap-40">
       {/* Consultations Completed */}
       <Fade direction="up" duration={800}>
         <div className="flex flex-col items-center">
-          <Image src={image2} width={50} alt="coming soon" />
-          <div className="text-center" ref={countUpRef1}>
+          <Image src={image2} width={100} alt="coming soon" />
+          <div className="text-center mt-6" ref={countUpRef1}>
             {inView1 && (
               <CountUp
                 start={0}
@@ -46,8 +49,8 @@ const SatisfiedCustomers = () => {
       {/* Clients Served */}
       <Fade direction="up" duration={800}>
         <div className="flex flex-col items-center">
-          <Image src={image2} width={50} alt="coming soon" />
-          <div className="text-center" ref={countUpRef2}>
+          <Image src={image3} width={100} alt="coming soon" />
+          <div className="text-center mt-6" ref={countUpRef2}>
             {inView2 && (
               <CountUp
                 start={0}
@@ -67,8 +70,8 @@ const SatisfiedCustomers = () => {
       {/* Trainings Hosted */}
       <Fade direction="up" duration={800}>
         <div className="flex flex-col items-center">
-          <Image src={image2} width={50} alt="coming soon" />
-          <div className="text-center" ref={countUpRef3}>
+          <Image src={image4} width={100} alt="coming soon" />
+          <div className="text-center mt-6" ref={countUpRef3}>
             {inView3 && (
               <CountUp
                 start={0}
@@ -88,13 +91,13 @@ const SatisfiedCustomers = () => {
       {/* Years of Experience */}
       <Fade direction="up" duration={800}>
         <div className="flex flex-col items-center">
-          <Image src={image2} width={50} alt="coming soon" />
-          <div className="text-center" ref={countUpRef4}>
+          <Image src={image5} width={100} alt="coming soon" />
+          <div className="text-center mt-6" ref={countUpRef4}>
             {inView4 && (
               <CountUp
                 start={0}
                 end={10}
-                duration={3}
+                duration={8}
                 separator=","
                 className="text-4xl md:text-5xl font-bold text-orange-400"
               />

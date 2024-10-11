@@ -301,6 +301,7 @@ const CustomCarousel = () => {
                 alt={`Slide ${index + 1}`}
                 layout="fill"
                 objectFit="cover"
+                style={{ width: "100%", height: "100%" }}
               />
               <div className="carousel-statement">
                 <div className="main-content">
