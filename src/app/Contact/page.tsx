@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import "leaflet/dist/leaflet.css"; // Import Leaflet CSS
+import dynamic from "next/dynamic";
 import {
   Form,
   Input,
@@ -14,22 +13,38 @@ import {
 } from "antd";
 import { Slide } from "react-awesome-reveal";
 import Image from "next/image";
-import contactUsImage from "@/app/assets/images/contact_0dy6odr8qeyz_64.png"; // Replace with your image path
-import locationIcon from "@/app/assets/images/location-pin.gif"; // Replace with your icon path
-import emailIcon from "@/app/assets/images/mail-delivery.gif"; // Replace with your icon path
-import phoneIcon from "@/app/assets/images/incoming-call.gif"; // Replace with your icon path
+import contactUsImage from "@/app/assets/images/contact_0dy6odr8qeyz_64.png";
+import locationIcon from "@/app/assets/images/location-pin.gif";
+import emailIcon from "@/app/assets/images/mail-delivery.gif";
+import phoneIcon from "@/app/assets/images/incoming-call.gif";
 
 const { Title, Text } = Typography;
 
+// Dynamically import react-leaflet components and disable SSR
+const DynamicMapContainer = dynamic(
+  () => import("react-leaflet").then((mod) => mod.MapContainer),
+  { ssr: false }
+);
+const DynamicTileLayer = dynamic(
+  () => import("react-leaflet").then((mod) => mod.TileLayer),
+  { ssr: false }
+);
+const DynamicMarker = dynamic(
+  () => import("react-leaflet").then((mod) => mod.Marker),
+  { ssr: false }
+);
+const DynamicPopup = dynamic(
+  () => import("react-leaflet").then((mod) => mod.Popup),
+  { ssr: false }
+);
+
 const ContactUsPage = () => {
   const handleFormSubmit = (values: any) => {
-    // Handle form submission logic here
     notification.success({
       message: "Message Sent",
       description:
         "Thank you for getting in touch. We will respond to you shortly.",
     });
-    // Reset form or close modal if needed
   };
 
   return (
@@ -69,7 +84,7 @@ const ContactUsPage = () => {
               />
               <Title level={3}>Our Location</Title>
               <Text className="font-bold">
-                1234 Main Street, Anytown, kenya
+                1234 Main Street, Anytown, Kenya
               </Text>
             </Card>
           </Col>
@@ -159,16 +174,16 @@ const ContactUsPage = () => {
             </h3>
           </div>
           <div className="map-container">
-            <MapContainer
-              center={[37.7749, -122.4194]} // Latitude and Longitude
+            <DynamicMapContainer
+              center={[37.7749, -122.4194]}
               zoom={12}
               style={{ height: "400px", width: "100%" }}
             >
-              <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-              <Marker position={[37.7749, -122.4194]}>
-                <Popup>San Francisco, CA</Popup>
-              </Marker>
-            </MapContainer>
+              <DynamicTileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+              <DynamicMarker position={[37.7749, -122.4194]}>
+                <DynamicPopup>San Francisco, CA</DynamicPopup>
+              </DynamicMarker>
+            </DynamicMapContainer>
           </div>
         </Slide>
       </div>
