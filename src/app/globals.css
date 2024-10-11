@@ -24,10 +24,11 @@
   }
 } */
 
-* {
-  /* background-color: #ffffff; */
-  padding: 0;
+
+body, html {
   margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 .underline-title {
   font-size: 24px; /* Adjust as needed */
