@@ -14,13 +14,25 @@ const StyledTabs = styled(Tabs)`
   .ant-tabs-tab {
     padding: 12px 24px;
     font-size: 16px;
+    color: #000000; /* Default text color for inactive tabs */
   }
 
+  /* Active tab styles */
   .ant-tabs-tab-active .ant-tabs-tab-btn {
     font-weight: bold;
-    border-bottom: 2px solid orange;
+    color: #facc15 !important; /* Force active tab text color to #facc15 */
   }
 
+  .ant-tabs-tab-btn:hover {
+    color: #facc15 !important;
+  }
+
+  /* Ensure the ink bar is also #facc15 */
+  .ant-tabs-ink-bar {
+    background-color: #facc15 !important;
+  }
+
+  /* Adjustments for smaller screens */
   @media (max-width: 768px) {
     .ant-tabs-tab {
       padding: 8px 16px;
