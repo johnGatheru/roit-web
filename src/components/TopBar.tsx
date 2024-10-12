@@ -122,7 +122,9 @@ const Navbar = () => {
             Contact
           </Link>
 
-          <button className="bg-yellow-500 p-4 btn">Book us now</button>
+          <button className="bg-yellow-500 px-5 py-2 btn text-white">
+            Book us now
+          </button>
         </div>
         {/* Small Screens */}
         <div className="md:hidden p-3">
