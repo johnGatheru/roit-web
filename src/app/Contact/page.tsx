@@ -13,12 +13,82 @@ import {
 } from "antd";
 import { Slide } from "react-awesome-reveal";
 import Image from "next/image";
-import contactUsImage from "@/app/assets/images/contact_0dy6odr8qeyz_64.png";
+import styled from "@emotion/styled";
+import contactUsImage from "@/app/assets/images/contactus.png";
 import locationIcon from "@/app/assets/images/location-pin.gif";
 import emailIcon from "@/app/assets/images/mail-delivery.gif";
 import phoneIcon from "@/app/assets/images/incoming-call.gif";
 
 const { Title, Text } = Typography;
+const ContactSection = styled.div`
+  display: flex;
+  background-color: #f5f5f5;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 40px;
+  width: 100%;
+  box-sizing: border-box;
+
+  & > div {
+    flex: 1;
+    width: 50%;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column-reverse; /* Reverse stacking order on small screens */
+    & > div {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+`;
+
+const TextContent = styled.div`
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 15em 15em 0px;
+  padding: 30px;
+  height: 80vh;
+  background-color: white;
+  margin-top: 2em;
+
+  h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #facc15;
+  }
+
+  p {
+    font-size: 18px;
+    color: #757575;
+    margin: 16px 0;
+  }
+
+  @media (max-width: 768px) {
+    border-radius: 0; /* Remove border radius on small screens */
+    height: auto; /* Let it grow based on content */
+    margin-top: 0; /* Remove margin on top */
+  }
+`;
+
+const ContactImage = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  @media (max-width: 768px) {
+    img {
+      width: 100%; /* Make image take full width */
+      height: auto; /* Ensure it maintains aspect ratio */
+    }
+  }
+`;
 
 // Dynamically import react-leaflet components and disable SSR
 const DynamicMapContainer = dynamic(
@@ -50,26 +120,29 @@ const ContactUsPage = () => {
   return (
     <div className="contact-us-page">
       {/* Hero Section */}
-      <div className="relative w-full h-[500px]">
-        <Image
-          src={contactUsImage}
-          alt="Contact Us Hero"
-          layout="fill"
-          objectFit="cover"
-          className="z-0"
-        />
-        <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
-        <div className="absolute inset-0 flex flex-col items-center justify-center z-20 text-center text-white px-4">
-          <Slide direction="down" triggerOnce>
-            <h1 className="text-5xl font-bold mb-4 text-amber-300">
-              Contact Us
-            </h1>
-            <Text className="text-2xl mb-4 text-white">
-              We'd love to hear from you!
-            </Text>
-          </Slide>
-        </div>
-      </div>
+      <ContactSection>
+        <TextContent>
+          <h1 className="mt-7">Contact us</h1>
+          <h4 className="text-4xl font-bold mt-6">We are here to help you</h4>
+          <p>
+            At our consultancy, we are dedicated to guiding businesses toward
+            sustainable success. Whether you're looking for expert advice,
+            strategic solutions, or personalized support, we’re here to assist.
+            Reach out to our team, and together, we’ll navigate the complexities
+            of your industry, helping you achieve your goals with confidence.
+            Let us be your trusted partner in growth and innovation.
+          </p>
+        </TextContent>
+        <ContactImage>
+          <Image
+            src={contactUsImage}
+            alt="Contact illustration"
+            width={600}
+            height={200}
+            objectFit="cover"
+          />
+        </ContactImage>
+      </ContactSection>
 
       {/* Contact Information */}
       <div className="container mx-auto my-12 px-4">
@@ -174,7 +247,7 @@ const ContactUsPage = () => {
             </h3>
           </div>
           <div className="map-container">
-            <DynamicMapContainer
+            {/* <DynamicMapContainer
               center={[37.7749, -122.4194]}
               zoom={12}
               style={{ height: "400px", width: "100%" }}
@@ -183,7 +256,7 @@ const ContactUsPage = () => {
               <DynamicMarker position={[37.7749, -122.4194]}>
                 <DynamicPopup>San Francisco, CA</DynamicPopup>
               </DynamicMarker>
-            </DynamicMapContainer>
+            </DynamicMapContainer> */}
           </div>
         </Slide>
       </div>
