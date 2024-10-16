@@ -40,6 +40,10 @@ const ContactSection = styled.div`
       width: 100%;
       margin-bottom: 20px;
     }
+    padding: 2px;
+    h4 {
+      font-size: 2em;
+    }
   }
 `;
 
