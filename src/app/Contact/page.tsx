@@ -35,7 +35,7 @@ const ContactSection = styled.div`
   }
 
   @media (max-width: 768px) {
-    flex-direction: column-reverse; /* Reverse stacking order on small screens */
+    flex-direction: column-reverse;
     & > div {
       width: 100%;
       margin-bottom: 20px;

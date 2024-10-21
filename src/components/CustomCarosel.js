@@ -16,37 +16,38 @@ import image6 from "@/app/assets/carouselItems/finance2.jpeg";
 const images = [
   {
     url: image5,
-    statement: "Statement 1",
-    content: "Shoes Fashion",
-    highlight: "Come and Grab it",
-    main: "Ensure the image covers the entire width and height of the slide using object-fit: cover.",
-    shop: "Get It",
+    statement: "Strategic Growth",
+    content: "Business Consulting",
+    highlight: "Unlock Your Business Potential",
+    main: "Ensure your business maximizes growth with expert strategic insights and custom solutions for sustained success.",
+    shop: "Learn More",
   },
   {
     url: image4,
-    statement: "Statement 3",
-    content: "Best Sneakers",
-    highlight: "Make a move and buy it",
-    main: "Adjust width and height attributes for the <Image> component to cover the entire slide properly.",
-    shop: "Grab Now",
+    statement: "Innovative Solutions",
+    content: "Financial Advisory",
+    highlight: "Take Control of Your Finances",
+    main: "Tailored financial advice to help you manage resources effectively, ensuring long-term stability and growth.",
+    shop: "Get Started",
   },
   {
     url: image3,
-    statement: "Statement 3",
-    content: "Sports Shoes",
-    highlight: "Home for your shoes",
-    main: "Manage the styles for width and height through the CarouselContainer styled component.",
-    shop: "Shop Now",
+    statement: "Empowering Leadership",
+    content: "Leadership Development",
+    highlight: "Build Strong Leaders",
+    main: "Comprehensive leadership coaching to foster strong decision-makers and visionary leaders in your organization.",
+    shop: "Discover More",
   },
   {
     url: image2,
-    statement: "Statement 3",
-    content: "Sports Shoes",
-    highlight: "Home for your shoes",
-    main: "To ensure the carousel takes up 100% of the viewport height, adjust the carousel container and the .carousel-statement styles.",
-    shop: "Shop Now",
+    statement: "Efficiency Redefined",
+    content: "Operations Optimization",
+    highlight: "Streamline Your Processes",
+    main: "Achieve operational excellence by optimizing processes, reducing costs, and increasing productivity.",
+    shop: "Optimize Now",
   },
 ];
+
 
 const zoomOut = keyframes`
   0% {
@@ -133,7 +134,7 @@ const CarouselContainer = styled.div`
   }
 
   .heading1 {
-    font-size: 4.2em;
+    font-size: 3.2em;
     font-weight: bold;
     opacity: 0.7;
     color: yellow;
