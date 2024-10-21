@@ -1,0 +1,20 @@
+/* Adjust DatePicker width for tablet screens */
+@media (max-width: 768px) {
+    .ant-picker {
+      width: 100% !important; /* Take full width on smaller screens */
+    }
+  }
+  
+  /* Adjust DatePicker width for mobile screens */
+  @media (max-width: 480px) {
+    .ant-picker {
+      width: 100% !important;
+      font-size: 12px; /* Adjust font size for smaller devices */
+    }
+  
+    /* Adjust padding for input fields */
+    .ant-input {
+      padding: 8px 12px;
+    }
+  }
+  
