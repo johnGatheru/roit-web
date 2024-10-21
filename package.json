@@ -12,6 +12,7 @@
     "@emotion/react": "^11.13.0",
     "@emotion/styled": "^11.13.0",
     "antd": "^5.20.2",
+    "axios": "^1.7.7",
     "bootstrap": "^5.3.3",
     "embla-carousel-react": "^8.1.8",
     "leaflet": "^1.9.4",

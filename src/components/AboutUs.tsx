@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { Fade } from "react-awesome-reveal"; // Import the Fade animation
-import aboutImage from "@/app/assets/carouselItems/consultation2.jpg";
+import aboutImage from "@/app/assets/images/thecompany.jpg";
 import aboutImage2 from "@/app/assets/carouselItems/consultation3.jpeg";
 
 const AboutUs = () => {

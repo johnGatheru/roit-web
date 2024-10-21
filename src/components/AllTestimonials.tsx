@@ -10,51 +10,57 @@ import profile4 from "@/app/assets/images/profile4.jpeg";
 const testimonials = [
   {
     id: 1,
-    title: "Design Quality",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    title: "Business Transformation",
+    description:
+      "The consultancy team helped reshape our business strategy, leading to a 30% increase in revenue within months. Their personalized approach was just what we needed.",
     image: profile1,
-    author: "Hilix Darwin Kalia",
-    role: "Founder, Coxer IT",
+    author: "Emma Trenton",
+    role: "CEO, Horizon Corp",
   },
   {
     id: 2,
-    title: "Design Quality",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    title: "Outstanding Client Service",
+    description:
+      "The team’s attention to detail and commitment to meeting deadlines were impressive. They provided us with clear solutions for our market expansion, making a complex process seamless.",
     image: profile2,
-    author: "Hilix Darwin Kalia",
-    role: "Founder, Coxer IT",
+    author: "David King",
+    role: "Founder, Global Ventures",
   },
   {
     id: 3,
-    title: "Design Quality",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    title: "Efficiency Boost",
+    description:
+      "Their expert insights helped us streamline our operations, leading to a 40% boost in productivity. The process was easy to follow, and the results were immediate.",
     image: profile3,
-    author: "Hilix Darwin Kalia",
-    role: "Founder, Coxer IT",
+    author: "Sophia Kimani",
+    role: "Ops Manager, AgriPro",
   },
   {
     id: 4,
-    title: "Design Quality",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    title: "Market Research Expertise",
+    description:
+      "They delivered excellent market insights, enabling us to make informed decisions on our new product launch. Their analysis was thorough and highly actionable.",
     image: profile4,
-    author: "Hilix Darwin Kalia",
-    role: "Founder, Coxer IT",
+    author: "Michael Ochieng",
+    role: "Biz Dev, Envision",
   },
   {
     id: 5,
-    title: "Design Quality",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    title: "Risk Management Guidance",
+    description:
+      "The consultancy provided clear, actionable advice on risk management, helping us avoid costly mistakes. Their approach was practical and results-driven.",
     image: profile2,
-    author: "Hilix Darwin Kalia",
-    role: "Founder, Coxer IT",
+    author: "Nancy Mwangi",
+    role: "Project Lead, NexGen",
   },
   {
     id: 6,
-    title: "Design Quality",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    title: "Sustainable Growth Solutions",
+    description:
+      "Thanks to their tailored growth strategies, we’ve seen consistent growth while maintaining sustainability. Their expertise has been invaluable to our success.",
     image: profile4,
-    author: "Hilix Darwin Kalia",
-    role: "Founder, Coxer IT",
+    author: "Tom Benson",
+    role: "MD, EcoGrow",
   },
 ];
 

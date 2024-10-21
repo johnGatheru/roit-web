@@ -8,9 +8,9 @@ import {
   FaTelegramPlane,
 } from "react-icons/fa";
 import { Fade } from "react-awesome-reveal"; // Import animation from react-awesome-reveal
-import profile1 from "@/app/assets/images/profile1.jpeg";
-import profile2 from "@/app/assets/images/profile2.jpeg";
-import profile3 from "@/app/assets/images/profile3.jpeg";
+import profile1 from "@/app/assets/images/user1.jpg";
+import profile2 from "@/app/assets/images/user2.jpg";
+import profile3 from "@/app/assets/images/user3.jpg";
 import profile4 from "@/app/assets/images/profile4.jpeg";
 
 const Cards = () => {
