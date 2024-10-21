@@ -1,5 +1,6 @@
 import React from "react";
 import axios from "axios";
+import "./BookingModal.css";
 import { Modal, Form, Input, DatePicker, notification, Button } from "antd";
 
 interface BookingModalProps {
