@@ -145,7 +145,7 @@ const Navbar = () => {
         </div>
         {/* Dropdown Menu for Small Screens */}
         {isOpen && (
-          <div className="md:hidden absolute top-0 left-0 w-full bg-gray-300 opacity-75">
+          <div className="md:hidden absolute top-0 left-0 w-full bg-gray-300 opacity-95">
             <Link
               href="/"
               className={`${

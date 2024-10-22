@@ -1,6 +1,7 @@
 import React from "react";
 import axios from "axios";
 import "./BookingModal.css";
+
 import { Modal, Form, Input, DatePicker, notification, Button } from "antd";
 
 interface BookingModalProps {
@@ -99,7 +100,7 @@ const BookingModal: React.FC<BookingModalProps> = ({
           name="dateTime"
           rules={[{ required: true, message: "Please select date and time" }]}
         >
-          <DatePicker showTime />
+          <DatePicker showTime style={{ width: "100%" }} />
         </Form.Item>
       </Form>
     </Modal>
