@@ -12,7 +12,7 @@ import {
 } from "antd";
 import { Slide } from "react-awesome-reveal";
 import Image from "next/image";
-import servicesImage from "@/app/assets/images/manmoney.jpg"; // Replace with your image path
+import servicesImage from "@/app/assets/images/success4.jpg"; // Replace with your image path
 
 const { Title, Text } = Typography;
 const { Option } = Select;
@@ -103,14 +103,14 @@ const ServicesPage = () => {
     <div className="services-page">
       {/* Hero Section */}
       <div className="image-container">
-        {/* <Image
+        <Image
           src={servicesImage}
           alt="Case Study"
           layout="fill" // Cover the container
           objectFit="cover" // Ensure image covers container
           quality={100} // Maintain clarity
           priority
-        /> */}
+        />
         <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
         <div className="absolute inset-0 flex flex-col items-center justify-center z-20 text-center text-white px-4">
           <Slide direction="down" triggerOnce>
