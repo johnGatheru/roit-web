@@ -12,7 +12,7 @@ import {
 } from "antd";
 import { Slide } from "react-awesome-reveal";
 import Image from "next/image";
-import faqImage from "@/app/assets/images/21517039_22.jpg"; // Replace with your image path
+import faqImage from "@/app/assets/images/faq.jpeg"; // Replace with your image path
 
 const { Panel } = Collapse;
 const { Option } = Select;
@@ -22,13 +22,65 @@ const faqData = [
     category: "General",
     faqs: [
       {
-        question: "What is your return policy?",
+        question: "What services does CN ROIT & ASSOCIATES offer?",
         answer:
-          "Our return policy lasts 30 days bru jdkf wekfkj wefofqk fkndk qfjfnjk fqknfkn",
+          "We provide a range of consultancy services, including financial insights, advanced tax strategies, risk management, audit services, and effective management solutions tailored to meet the unique needs of our clients.",
       },
       {
-        question: "How do I track my order?",
-        answer: "You can track your order by...",
+        question: "How can I get started with your consultancy services?",
+        answer:
+          "To begin, simply contact us through our website or call us directly. We will schedule an initial consultation to discuss your specific needs and how we can assist you in achieving your financial goals.",
+      },
+      {
+        question: "Who are your typical clients?",
+        answer:
+          "Our clients include individuals, small to medium-sized businesses, and larger corporations seeking expert financial guidance and innovative solutions to improve their financial performance.",
+      },
+    ],
+  },
+  {
+    category: "Services",
+    faqs: [
+      {
+        question: "What industries do you specialize in?",
+        answer:
+          "While we serve a diverse range of industries, our expertise includes finance, agriculture, manufacturing, and retail. We tailor our services to meet the specific challenges and opportunities within each sector.",
+      },
+      {
+        question: "Can you assist with regulatory compliance?",
+        answer:
+          "Yes, our team is well-versed in regulatory compliance across various industries. We provide guidance to ensure that your business adheres to the latest laws and regulations, minimizing risks and potential penalties.",
+      },
+    ],
+  },
+  {
+    category: "Client Relationships",
+    faqs: [
+      {
+        question:
+          "How does CN ROIT & ASSOCIATES ensure client confidentiality?",
+        answer:
+          "We prioritize client confidentiality and adhere to strict privacy policies. All client information is securely stored and accessed only by authorized personnel to ensure your data remains private.",
+      },
+      {
+        question: "What is your approach to client relationships?",
+        answer:
+          "We believe in building long-term partnerships based on trust and open communication. Our client-centric approach ensures that we understand your unique needs and deliver tailored solutions that drive success.",
+      },
+    ],
+  },
+  {
+    category: "Success Measurement",
+    faqs: [
+      {
+        question: "How do you measure success for your clients?",
+        answer:
+          "We measure success based on the achievement of our clients' financial goals, improved performance, and satisfaction with our services. We continuously monitor progress and adjust our strategies to ensure optimal outcomes.",
+      },
+      {
+        question: "How can I stay updated on your services and insights?",
+        answer:
+          "You can subscribe to our newsletter on our website to receive the latest updates, insights, and resources related to financial management and consultancy services.",
       },
     ],
   },
@@ -36,12 +88,14 @@ const faqData = [
     category: "Billing",
     faqs: [
       {
-        question: "What payment methods do you accept?",
-        answer: "We accept Visa, MasterCard...",
+        question: "What are your fees for consultancy services?",
+        answer:
+          "Our fees vary depending on the specific services required and the scope of the project. We provide transparent pricing during the initial consultation and ensure there are no hidden costs.",
       },
       {
         question: "Can I get a refund?",
-        answer: "Refunds are processed within 7 business days...",
+        answer:
+          "Refunds are processed within 7 business days based on the terms outlined in our service agreement.",
       },
     ],
   },

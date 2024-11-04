@@ -4,8 +4,9 @@ import useEmblaCarousel from "embla-carousel-react";
 import TestimonialCard from "./Testimonials";
 import profile1 from "@/app/assets/images/profile1.jpeg";
 import profile2 from "@/app/assets/images/profile2.jpeg";
-import profile3 from "@/app/assets/images/profile3.jpeg";
-import profile4 from "@/app/assets/images/profile4.jpeg";
+import profile3 from "@/app/assets/images/avatar4.jpg";
+import profile4 from "@/app/assets/images/avatar1.jpeg";
+import profile5 from "@/app/assets/images/avatar3.jpeg";
 
 const testimonials = [
   {
@@ -49,8 +50,8 @@ const testimonials = [
     title: "Risk Management Guidance",
     description:
       "The consultancy provided clear, actionable advice on risk management, helping us avoid costly mistakes. Their approach was practical and results-driven.",
-    image: profile2,
-    author: "Nancy Mwangi",
+    image: profile5,
+    author: "Julius Mwangi",
     role: "Project Lead, NexGen",
   },
   {

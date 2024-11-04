@@ -133,7 +133,7 @@ const Index = () => {
                 <p className="text-lg md:text-xl text-gray-700 mb-6">
                   At{" "}
                   <span className="font-bold text-orange-600">
-                    Riot Consultancy
+                    CN Roit & Associates
                   </span>
                   , we believe in more than providing advice. We believe in
                   transforming challenges into opportunities, and ideas into
