@@ -36,6 +36,7 @@ const SatisfiedCustomers = () => {
                 end={1500}
                 duration={3}
                 separator=","
+                suffix="+"
                 className="text-4xl md:text-5xl font-bold text-blue-400"
               />
             )}
@@ -57,6 +58,7 @@ const SatisfiedCustomers = () => {
                 end={500}
                 duration={3}
                 separator=","
+                suffix="+"
                 className="text-4xl md:text-5xl font-bold text-yellow-400"
               />
             )}
@@ -78,6 +80,7 @@ const SatisfiedCustomers = () => {
                 end={200}
                 duration={3}
                 separator=","
+                suffix="+"
                 className="text-4xl md:text-5xl font-bold text-green-400"
               />
             )}
@@ -96,9 +99,10 @@ const SatisfiedCustomers = () => {
             {inView4 && (
               <CountUp
                 start={0}
-                end={10}
+                end={2}
                 duration={8}
                 separator=","
+                suffix="+"
                 className="text-4xl md:text-5xl font-bold text-orange-400"
               />
             )}

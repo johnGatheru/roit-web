@@ -17,20 +17,19 @@ const Achievements = () => {
               Our Achievements
             </h4>
             <p className="text-base md:text-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
-              iusto consectetur commodi doloribus neque officia corporis
-              quibusdam tenetur dolorum facilis. Ut voluptate eligendi odio
-              magnam! Quam incidunt eos animi aperiam optio distinctio soluta
-              asperiores ad omnis natus saepe ullam nostrum, repudiandae
-              dignissimos voluptas? Quasi odio dolor impedit animi, dolorum
-              maiores non modi in eveniet eaque tenetur nulla et sint facilis!
+              Since our founding in 2023, CN Roit & Associates has rapidly
+              become a trusted leader in the audit and financial consultancy
+              sector. Our commitment to excellence, innovation, and client
+              empowerment has enabled us to deliver exceptional financial
+              management and taxation services, helping businesses and
+              individuals achieve lasting success.
             </p>
             <p className="mt-10 text-base md:text-lg">
-              Ut voluptate eligendi odio magnam! Quam incidunt eos animi aperiam
-              optio distinctio soluta asperiores ad omnis natus saepe ullam
-              nostrum, repudiandae dignissimos voluptas? Quasi odio dolor
-              impedit animi, dolorum maiores non modi in eveniet eaque tenetur
-              nulla et sint facilis!
+              Our firm is recognized for its professionalism, industry
+              expertise, and client-centered approach. We are proud of the
+              impact we have made, guiding clients through complex financial
+              challenges and empowering them to make informed, strategic
+              decisions that drive their growth.
             </p>
           </Fade>
         </div>
@@ -55,12 +54,13 @@ const Achievements = () => {
             Putting clients first!
           </h1>
           <p className="text-center w-full md:w-3/4 text-base md:text-lg">
-            With our thorough knowledge of all the products we support and the
-            industries we serve, we make educated recommendations which help our
-            clients realize long-term value from their system. At our company we
-            not only help you choose software to address your current business
-            needs, we help you use that technology to your competitive
-            advantage. And we do it all clearly and with purpose.
+            With our deep expertise in financial management and a comprehensive
+            understanding of our clients' industries, we provide strategic
+            insights that drive long-term value. At CN Roit & Associates, we go
+            beyond offering standard financial solutions; we empower our clients
+            to navigate complex financial landscapes, optimize resources, and
+            achieve sustainable growth. Our approach is transparent, purposeful,
+            and always centered on your success.
           </p>
         </div>
       </Fade>

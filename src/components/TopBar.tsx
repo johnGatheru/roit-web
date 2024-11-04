@@ -6,6 +6,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import barmenu from "@/app/assets/images/menuicon.png";
+import logo from "@/app/assets/images/WhatsApp Image 2024-07-20 at 2.24.17 AM.jpeg";
+
 import BookingModal from "@/components/BookingModal"; // Import the modal component
 
 const Navbar = () => {
@@ -51,7 +53,7 @@ const Navbar = () => {
               href="/"
               className={`${isScrolled ? "text-black" : "text-white"}`}
             >
-              MyWebsite
+              <Image src={logo} alt="comming" width={70} />
             </Link>
           </div>
           {/* Large and Medium Screens */}

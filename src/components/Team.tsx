@@ -18,26 +18,26 @@ const Cards = () => {
     {
       id: 1,
       imageSrc: profile1,
-      name: "Peris Chris",
+      name: "Robert",
       title: "CEO",
       description:
-        "This is a brief description for card 1. It provides insight into the card’s content.",
+        "Consultant focused on market analysis, strategy development, and organizational growth.",
     },
     {
       id: 2,
       imageSrc: profile2,
-      name: "Peter Korir",
-      title: "Founder",
+      name: "Nicodemus Toroitich",
+      title: "Team Lead",
       description:
-        "This is a brief description for card 2. It provides insight into the card’s content.",
+        "Accounting professional specializing in audits, fraud recovery, and risk management.",
     },
     {
       id: 3,
       imageSrc: profile3,
-      name: "John Walker",
+      name: "Alice Korir",
       title: "Finance Advisor",
       description:
-        "This is a brief description for card 3. It provides insight into the card’s content.",
+        "Project manager experienced in leading teams and ensuring successful project delivery.",
     },
     {
       id: 4,
@@ -45,7 +45,7 @@ const Cards = () => {
       name: "Elijah Smith",
       title: "Lawyer",
       description:
-        "This is a brief description for card 4. It provides insight into the card’s content.",
+        "Financial analyst specializing in comprehensive data analysis, forecasting, and budgeting for clients.",
     },
   ];
 
@@ -57,7 +57,11 @@ const Cards = () => {
         </h2>
       </div>
       <div className="flex w-full items-center justify-center font-bold px-4">
-        <p>The team behind the success of riot company</p>
+        <p className="text-center text-base md:text-lg text-gray-700 max-w-2xl">
+          Meet the dedicated team behind the success of CN Roit & Associates, a
+          group of experienced professionals committed to delivering excellence
+          and empowering our clients on their journey to financial success.
+        </p>
       </div>
 
       {/* Updated container styles */}
@@ -70,9 +74,9 @@ const Cards = () => {
                 <Image
                   src={card.imageSrc}
                   alt={card.title}
-                  width={300}
-                  height={300}
-                  className="rounded object-cover"
+                  width={250}
+                  height={200}
+                  className="rounded object-cover  w-64 h-64"
                 />
               </div>
 

@@ -37,19 +37,19 @@ const AboutUs = () => {
                 <span className="underline-name">About</span> Company
               </h2>
               <p className="text-sm md:text-base">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Possimus, libero. Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Modi, eum ad? Qui sapiente totam unde
-                laboriosam ut optio distinctio blanditiis quae dolores! Debitis
-                officia accusantium consequatur at necessitatibus eaque quisquam
-                corrupti modi, repellat harum autem omnis laborum, voluptatum
-                vero quae porro reprehenderit? Unde laudantium iste distinctio.
-                Nulla numquam architecto adipisci!
+                Founded in 2023, CN Roit & Associates is a leading audit and
+                financial consultancy firm dedicated to excellence, innovation,
+                and empowering clients. Under the guidance of CPA Nicodemus
+                Toroitich, our team provides a comprehensive range of financial
+                management and taxation services. We are committed to guiding
+                businesses and individuals toward sustainable success through
+                expert assistance and tailored solutions.
               </p>
               <p className="mt-7 text-sm md:text-base">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Quisquam consectetur repellendus quibusdam consequuntur quam
-                magnam aliquid eligendi pariatur asperiores quod?
+                At CN Roit & Associates, we combine deep industry knowledge with
+                a client-focused approach to help our clients navigate financial
+                complexities, optimize tax strategies, and achieve their
+                financial goals in a dynamic business environment
               </p>
             </div>
           </Fade>
